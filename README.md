@@ -11,15 +11,9 @@
 
 ## About
 
-About Text Here
+🌐 Web configurator for building a gaming PC with testing.
 
 ## Documentation
-
-Documentation Here
-
-## Distribute
-
-- [Service Name](Page Link)
 
 
 ## Developers
