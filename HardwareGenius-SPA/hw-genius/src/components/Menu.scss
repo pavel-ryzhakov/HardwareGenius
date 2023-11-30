@@ -1,0 +1,35 @@
+@import "/src/styles/fonts/fonts.scss";
+@import "/src/styles/colors.scss";
+
+.sidebar {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  //margin: 0 auto;
+  color: $regular-font;
+  text-decoration: none;
+  font-family: Futura PT Book;
+  /* Changing the color */
+  a {
+    text-decoration: none;
+    color: $regular-font;
+  }
+
+  .link {
+    color: $regular-font;
+    text-decoration: none;
+    &:hover {
+      color: $product-font;
+    }
+  }
+  .activeLink {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    border-width: 40px;
+    display: inline-block;
+    border-color: aliceblue;
+    border-radius: 70%;
+  }
+}

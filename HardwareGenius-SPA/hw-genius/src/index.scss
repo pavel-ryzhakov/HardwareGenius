@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #181818;
+}
+html {
+  overflow-y: scroll;
+}

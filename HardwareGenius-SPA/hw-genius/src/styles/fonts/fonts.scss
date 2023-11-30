@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Futura PT Book";
+  src: url("FuturaPT-Book.eot");
+  src: local("Futura PT Book"), local("FuturaPT-Book"),
+    url("FuturaPT-Book.eot?#iefix") format("embedded-opentype"),
+    url("FuturaPT-Book.woff2") format("woff2"),
+    url("FuturaPT-Book.woff") format("woff"),
+    url("FuturaPT-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura PT";
+  src: url("FuturaPT-Medium.eot");
+  src: local("Futura PT Medium"), local("FuturaPT-Medium"),
+    url("FuturaPT-Medium.eot?#iefix") format("embedded-opentype"),
+    url("FuturaPT-Medium.woff2") format("woff2"),
+    url("FuturaPT-Medium.woff") format("woff"),
+    url("FuturaPT-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
