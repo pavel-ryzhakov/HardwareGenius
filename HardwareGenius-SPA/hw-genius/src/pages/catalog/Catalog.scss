@@ -1,0 +1,55 @@
+@import "/src/styles/fonts/fonts.scss";
+@import "/src/styles/colors.scss";
+
+.go {
+  margin: 0 auto;
+}
+.test {
+  padding: 10px;
+  font-family: Futura PT;
+  font-size: 40px;
+  color: beige;
+  text-align: center;
+  flex-shrink: 0;
+
+  border-radius: 6px;
+  /* border: 1px solid rgb(0 0 0 / 20%); */
+  background: #181818;
+  box-shadow: 1.5px 1.5px 2px 0px rgba(0, 0, 0, 0.25) inset,
+    -1px -1px 1px 0px rgba(255, 255, 255, 0.06) inset;
+}
+// .search {
+//   display: inline-flex;
+//   padding: 17px 158px 17px 17px;
+//   align-items: flex-start;
+//   gap: 16px;
+//   border-radius: 6px;
+//   /* border: 1px solid rgb(0 0 0 / 20%); */
+//   background: #181818;
+//   box-shadow: 1.5px 1.5px 2px 0px rgba(0, 0, 0, 0.25) inset,
+//     -1px -1px 1px 0px rgba(255, 255, 255, 0.06) inset;
+// }
+.search-panel {
+  input[type="text"] {
+    height: 50px;
+    width: 240px;
+    font-family: Futura PT Book;
+    font-size: 22px;
+    //color: $regular-font;
+    display: inline-flex;
+    padding: 0px 0px 0px 5px;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 6px;
+    background: #181818;
+    box-shadow: 1.5px 1.5px 2px 0px rgba(0, 0, 0, 0.25) inset,
+      -1px -1px 1px 0px rgba(255, 255, 255, 0.06) inset;
+  }
+  //   input[type="text"]::placeholder {
+  //     color: $non-focus;
+  //   }
+  //   input[type="text"]:focus {
+  //     border: 1px solid $interface-color;
+  //     box-shadow: 0px 4px 10px 0px rgba(36, 182, 247, 0.2);
+  //   }
+}
