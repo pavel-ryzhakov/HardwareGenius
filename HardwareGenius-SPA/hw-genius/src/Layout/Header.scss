@@ -5,7 +5,7 @@ header {
   height: 100px;
   padding-top: 9px;
 
-  .header-container {
+  .headerContainer {
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -14,37 +14,14 @@ header {
     height: 90px;
     font-family: Futura PT Book;
     font-size: 15px;
-    .info-container {
-      display: flex;
-      flex-direction: column;
-      width: 40%;
-      text-align: center;
-      font-style: bold;
-      color: $regular-font;
-      font-size: 12px;
-      .hr-shelf {
-        margin: -40px auto 10px;
-        padding: 0;
-        height: 50px;
-        border: none;
-        border-bottom: 1px solid $non-focus;
-        box-shadow: 0 3px 3px -3px #333;
-        width: 95%;
-      }
-    }
-    .header-buttons {
-      width: 20%;
-      display: flex;
-      justify-content: space-between;
+  }
 
-      .text-link {
-        color: $regular-font;
-        text-decoration: none;
-        /* Changing the color */
-        &:hover {
-          color: $product-font;
-        }
-      }
+  .textLink {
+    color: $regular-font;
+    text-decoration: none;
+    /* Changing the color */
+    &:hover {
+      color: $product-font;
     }
   }
 }

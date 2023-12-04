@@ -1,13 +1,5 @@
 import "./PriceSlider.scss";
-import ReactDOM from "react-dom/client";
-import {
-  ReactiveBase,
-  RangeInput,
-  ResultList,
-  ReactiveList,
-} from "@appbaseio/reactivesearch";
-const minPrice = 0;
-const maxPrice = 50000;
+import { ReactiveBase, RangeInput } from "@appbaseio/reactivesearch";
 const PriceSlider = () => {
   return (
     <div className="priceSlider">
@@ -46,8 +38,8 @@ const PriceSlider = () => {
                 end: 100,
               }}
               rangeLabels={{
-                start: "от",
-                end: "до",
+                start: "",
+                end: "",
               }}
               showFilter={true}
               stepValue={1}

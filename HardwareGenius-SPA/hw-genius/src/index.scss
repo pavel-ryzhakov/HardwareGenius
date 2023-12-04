@@ -1,3 +1,5 @@
+@import "/src/styles/fonts/fonts.scss";
+@import "/src/styles/colors.scss";
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +17,7 @@ a {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #181818;
+  background-color: $background-color;
 }
 html {
   overflow-y: scroll;

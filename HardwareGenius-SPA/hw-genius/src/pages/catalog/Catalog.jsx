@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import "./Catalog.scss";
 
 const Catalog = () => {
