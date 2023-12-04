@@ -36,7 +36,12 @@ const Menu = () => {
       >
         Готовые сборки
       </NavLink>
-      <NavLink to="login">Личный кабинет</NavLink>
+      <NavLink
+        className={({ isActive }) => (isActive ? "activeLink" : "link")}
+        to="login"
+      >
+        Личный кабинет
+      </NavLink>
       <NavLink
         className={({ isActive }) => (isActive ? "activeLink" : "link")}
         to="cart"

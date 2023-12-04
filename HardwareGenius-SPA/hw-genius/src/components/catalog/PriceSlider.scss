@@ -4,8 +4,9 @@
 .priceSlider {
   width: 180px;
   font-family: Futura PT Book;
-  font-size: 17px;
+  font-size: 15px;
   color: $regular-font;
+  margin-top: 20px;
 
   .col {
     font-family: Futura PT Book;
@@ -20,7 +21,7 @@
 
     .rheostat {
       overflow: visible;
-      margin: 15px 0px;
+      margin: 10px 0px;
       margin-left: 5px;
       width: 160px;
 
@@ -54,13 +55,19 @@
 
     input {
       font-family: Futura PT Book;
-      font-size: 15px;
+      font-size: 13px;
       border: 1px solid rgba(56, 55, 55, 0.631372549);
-      color: $regular-font;
+      color: $non-focus;
       width: 72px;
-      min-height: 20px;
+      min-height: 24px;
       padding: 0px;
       background-color: $background-color;
+    }
+
+    .ep3169p0:hover {
+      border: 1px solid $interface-color;
+      font-size: 13px;
+      color: $regular-font;
     }
   }
 

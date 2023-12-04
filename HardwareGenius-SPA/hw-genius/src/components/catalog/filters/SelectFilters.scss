@@ -1,0 +1,60 @@
+.selFilter {
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.col {
+  flex: 1;
+  padding: 15px;
+}
+
+.row > .col:first-child {
+  border-right: 1px solid #ccc;
+  max-width: 400px;
+}
+
+.row > .col:last-child {
+  background: #fafafa;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media all and (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .row > .col:first-child {
+    border-right: none;
+    max-width: none;
+  }
+}
