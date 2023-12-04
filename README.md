@@ -21,7 +21,7 @@
       <summary><b>NPM</b></summary>
       <p>
     <ul>
-        <li>ReactiveSearch [npm install @appbaseio/reactivesearch]</li>
+        <li> **ReactiveSearch** [npm install @appbaseio/reactivesearch]</li>
         <li>Font Awesome [npm i --save @fortawesome/fontawesome-svg-core]</li>            
     </ul>
 </details>
