@@ -1,0 +1,145 @@
+@import "/src/styles/fonts/fonts.scss";
+@import "/src/styles/colors.scss";
+// $border-radius: 20px;
+
+// $primary: #709fdc;
+// $base: #071739;
+// $shadow-color: #274684;
+// $lighter-shadow: rgba($shadow-color, 0.2);
+// $white: #fff;
+// $gray: #8c8c8c;
+// $lighter-gray: rgba($gray, 0.1);
+// $time-line-width: 240px;
+// $transition: 0.3s all ease;
+
+// @mixin dragIndicator($property, $background, $z-index) {
+//   #{$property} {
+//     position: absolute;
+//     top: 0;
+//     z-index: $z-index;
+//     width: 0;
+//     height: 5px;
+//     border-radius: 5px;
+//     background: $background;
+//     &:hover {
+//       &::before {
+//         opacity: 1;
+//       }
+//       &::after {
+//         opacity: 1;
+//       }
+//     }
+//     &::before {
+//       opacity: 0;
+//       content: attr(data-content);
+//       display: block;
+//       position: absolute;
+//       top: -40px;
+//       right: -23px;
+//       width: 40px;
+//       padding: 3px;
+//       text-align: center;
+//       color: white;
+//       background: $shadow-color;
+//       border-radius: $border-radius;
+//     }
+//     &::after {
+//       opacity: 0;
+//       content: "";
+//       display: block;
+//       position: absolute;
+//       top: -18px;
+//       right: -8px;
+//       border-top: 8px solid $shadow-color;
+//       border-left: 8px solid transparent;
+//       border-right: 8px solid transparent;
+//     }
+//     #{$property}-drag {
+//       position: absolute;
+//       right: -7.5px;
+//       top: -5px;
+
+//       width: 15px;
+//       height: 15px;
+
+//       border-radius: 50%;
+//       background: $base;
+//       transition: all 0.3s;
+//       &:hover {
+//         box-shadow: 0 0 0 6px $lighter-shadow;
+//       }
+//     }
+//   }
+// }
+
+// .card {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 50px;
+//   padding-top: 25px;
+//   margin-top: 40px;
+//   border-radius: $border-radius;
+//   box-shadow: 0px 0px 20px 0px $lighter-shadow;
+//   background: $white;
+//   overflow: hidden;
+//   h2 {
+//     margin-bottom: 40px;
+//   }
+//   .current-value {
+//     width: 100%;
+
+//     label {
+//       display: inline-flex;
+//       width: 50px;
+//       font-size: 20px;
+//     }
+//     input {
+//       margin: 0;
+//       max-width: 40px;
+//       margin-bottom: 5px;
+//       font-size: 16px;
+//       color: white;
+//       padding: 5px;
+//       padding-left: 15px;
+//       border: none;
+//       border-radius: $border-radius;
+//       background: $shadow-color;
+//     }
+//   }
+//   .values {
+//     display: flex;
+//     justify-content: space-between;
+//     font-weight: 600;
+//     margin-top: 30px;
+//     margin-bottom: 10px;
+//     width: $time-line-width;
+//   }
+//   #slider {
+//     position: relative;
+//     margin: 0 auto;
+//     width: $time-line-width;
+//     height: 5px;
+//     background: $primary;
+//     border-radius: 5px;
+//     cursor: pointer;
+
+//     @include dragIndicator("#min", $primary, 2);
+//     @include dragIndicator("#max", $shadow-color, 1);
+//   }
+// }
+
+// input[type="number"]::-webkit-outer-spin-button,
+// input[type="number"]::-webkit-inner-spin-button {
+//   -webkit-appearance: none;
+//   margin: 0;
+// }
+// input[type="number"] {
+//   -moz-appearance: textfield;
+// }
+
+// *:focus {
+//   outline: none;
+//   box-shadow: 0 0 0 2px $primary;
+// }

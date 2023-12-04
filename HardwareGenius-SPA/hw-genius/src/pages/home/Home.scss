@@ -1,7 +1,6 @@
 @import "/src/styles/fonts/fonts.scss";
 @import "/src/styles/colors.scss";
 
-
 .main-banner {
   display: flex;
   justify-content: space-between;
@@ -29,6 +28,21 @@
       margin-top: 10px;
       font-size: 14px;
       color: #9b9898;
+    }
+  }
+  .image-cont {
+    position: relative;
+    width: 450px;
+    height: 515px;
+    .smoke {
+      position: absolute;
+      top: -274px;
+      left: -238px;
+    }
+    .arni {
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
 }

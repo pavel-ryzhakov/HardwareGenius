@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import logo1 from "../assets/images/logos/logo.png";
 import "./Header.scss";
-import "../components/Menu.scss";
 import Menu from "../components/Menu";
 
 const Header = () => {

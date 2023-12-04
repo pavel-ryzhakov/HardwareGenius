@@ -1,0 +1,67 @@
+@import "/src/styles/fonts/fonts.scss";
+@import "/src/styles/colors.scss";
+
+form {
+  position: relative;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  font-family: Futura PT Book;
+  font-size: 15px;
+  color: $regular-font;
+}
+.searchString {
+  font-family: Futura PT Book;
+  font-size: 15px;
+  color: $regular-font;
+}
+.searchString form {
+  height: 26px;
+  margin: 10px 0;
+}
+.searchString input,
+.searchString button {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Futura PT Book;
+  color: $regular-font;
+}
+.searchString input {
+  width: 100%;
+  height: 24px;
+  padding-left: 6px;
+
+  border: 1px solid $non-focus;
+}
+.searchString ::placeholder {
+  color: $non-focus;
+}
+input:focus {
+  border: 1px solid $interface-color;
+  box-shadow: 0px 0px 0px 0px rgba(36, 182, 247, 0.2);
+}
+
+.searchString button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  background-color: $regular-font;
+}
+.searchString button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 10px;
+  color: $background-color;
+}
+.searchString button:hover:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 10px;
+  color: $interface-color;
+}

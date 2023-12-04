@@ -14,8 +14,9 @@ const Home = () => {
           собранной системы в любимых играх и приложениях.
         </p>
       </div>
-      <div class="image">
-        <img src={pic} alt="pc" width="450" />
+      <div class="image-cont">
+        {/* <img src={pic2} className="smoke" alt="d" /> */}
+        <img src={pic} className="arni" alt="pc" width="450" />
       </div>
     </div>
   );

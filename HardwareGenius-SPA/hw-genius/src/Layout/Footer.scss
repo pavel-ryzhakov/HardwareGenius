@@ -1,0 +1,10 @@
+@import "/src/styles/fonts/fonts.scss";
+@import "/src/styles/colors.scss";
+
+footer {
+  height: 100px;
+  padding-top: 9px;
+  font-family: Futura PT Book;
+  font-size: 15px;
+  color: $regular-font;
+}

@@ -15,6 +15,7 @@ const Menu = () => {
         to="."
         end
       >
+        <i class="fa fa-home" aria-hidden="true"></i>
         Главная
       </NavLink>
       <NavLink
@@ -35,12 +36,7 @@ const Menu = () => {
       >
         Готовые сборки
       </NavLink>
-      <NavLink
-        className={({ isActive }) => (isActive ? "activeLink" : "link")}
-        to="login"
-      >
-        Личный кабинет
-      </NavLink>
+      <NavLink to="login">Личный кабинет</NavLink>
       <NavLink
         className={({ isActive }) => (isActive ? "activeLink" : "link")}
         to="cart"

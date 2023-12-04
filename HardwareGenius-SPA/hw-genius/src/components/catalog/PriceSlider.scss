@@ -1,0 +1,113 @@
+@import "/src/styles/fonts/fonts.scss";
+@import "/src/styles/colors.scss";
+
+.priceSlider {
+  width: 180px;
+  font-family: Futura PT Book;
+  font-size: 15px;
+  color: $regular-font;
+
+  .col {
+    font-family: Futura PT Book;
+    font-size: 15px;
+    color: $regular-font;
+    flex: 1;
+    padding: 10px 0;
+    .e1p4hzk20 {
+      display: flex;
+      justify-content: center;
+    }
+
+    .rheostat {
+      overflow: visible;
+      margin: 15px 0px;
+      width: 90%;
+
+      .rheostat-handle {
+        background-color: $interface-color;
+        border-color: $interface-color;
+        border-radius: 0%;
+        outline: none;
+        z-index: 2;
+        width: 12px;
+        height: 12px;
+        cursor: pointer;
+      }
+      .rheostat-progress {
+        background-color: #d8d8d8;
+        position: absolute;
+        top: -6px;
+        background-color: $interface-color;
+      }
+      .rheostat-background {
+        height: 4px;
+        background-color: $regular-font;
+        top: -6px;
+        width: 100%;
+        position: relative;
+      }
+    }
+    input {
+      font-family: Futura PT Book;
+      font-size: 15px;
+      border: 1px solid rgba(56, 55, 55, 0.631372549);
+      color: $regular-font;
+      width: 70px;
+      min-height: 20px;
+      padding: 0px;
+      background-color: $background-color;
+    }
+    // .css-175iyty-Input:active {
+    //   color: $regular-font;
+    // }
+  }
+
+  .row > .col:first-child {
+    max-width: 180px;
+  }
+
+  .row > .col:last-child {
+    font-family: Futura PT Book;
+    font-size: 15px;
+    color: $regular-font;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .column {
+    flex-direction: column;
+  }
+
+  .align-center {
+    align-items: center;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .justify-space-between {
+    justify-content: space-between;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  @media all and (max-width: 180px) {
+    .row {
+      flex-direction: column;
+    }
+
+    .row > .col:first-child {
+      border-right: none;
+      max-width: none;
+    }
+  }
+}
