@@ -3,23 +3,24 @@
 
 footer {
   display: flex;
-
   height: 30px;
   padding: 25px;
   font-family: Futura PT Book;
   font-size: 15px;
   color: $regular-font;
+
   .footerContainer {
     width: 1000px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin: 0 auto;
+
     .iconsPanel {
       display: flex;
-
       width: 100px;
       margin: 0 10px;
+
       .fa {
         margin: 0 10px;
       }

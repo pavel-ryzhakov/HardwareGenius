@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import "./Home.scss";
 import pic from "../../assets/images/content/header-arni.png";
 
@@ -15,7 +14,6 @@ const Home = () => {
         </p>
       </div>
       <div class="image-cont">
-        {/* <img src={pic2} className="smoke" alt="d" /> */}
         <img src={pic} className="arni" alt="pc" width="450" />
       </div>
     </div>
