@@ -14,8 +14,26 @@
 ## About
 
 🌐 Web configurator for building a gaming PC with testing.
-
 ## Documentation
+
+## External resources
+<details>
+      <summary><b>NPM</b></summary>
+      <p>
+    <ul>
+        <li>ReactiveSearch [npm install @appbaseio/reactivesearch]</li>
+        <li>Font Awesome [npm i --save @fortawesome/fontawesome-svg-core]</li>            
+    </ul>
+</details>
+
+<details>
+      <summary><b>NuGet</b></summary>
+      <p>
+    <ul>
+        <li>Entity Framework Core</li>
+        <li></li>            
+    </ul>
+</details>
 
 
 ## Developers
