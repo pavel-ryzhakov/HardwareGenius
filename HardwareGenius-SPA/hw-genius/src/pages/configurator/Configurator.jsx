@@ -1,7 +1,7 @@
 import "./Configurator.scss";
 import Search from "../../components/catalog/Search";
 import PriceSlider from "../../components/catalog/PriceSlider";
-// import SelectFilters from "../../components/catalog/filters/SelectFilters";
+import SelectFilters from "../../components/catalog/filters/SelectFilters";
 import Filter from "../../components/catalog/filters/Filter";
 
 const Configurator = () => {
@@ -21,7 +21,7 @@ const Configurator = () => {
       <div className="pageList">
         <div className="topBlock">
           <div className="topFilters"></div>
-          <div className="pickedFilters">{/* <SelectFilters /> */}</div>
+          <div className="pickedFilters">{<SelectFilters />}</div>
         </div>
         <div className="productsList"></div>
       </div>
