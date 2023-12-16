@@ -30,8 +30,10 @@
       <summary><b>NuGet</b></summary>
       <p>
     <ul>
-        <li>Entity Framework Core</li>
-        <li></li>            
+          <li>Entity Framework Core</li>
+          <li>Npgsql.EntityFrameworkCore.PostgreSQL</li>
+          <li>Serilog</li>
+          <li>AutoMapper</li>
     </ul>
 </details>
 
