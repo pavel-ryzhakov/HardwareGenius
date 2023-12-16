@@ -1,5 +1,5 @@
 <p align="center">
-      <img src="https://github.com/pavel-ryzhakov/HardwareGenius/blob/master/src/Web/wwwroot/img/logo.png?raw=true" width="500">
+      <img src="https://github.com/pavel-ryzhakov/HardwareGenius/blob/master/HardwareGenius-SPA/hw-genius/src/assets/images/logos/logo.png?raw=true" width="500">
 </p>
 
 <p align="center">
