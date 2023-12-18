@@ -1,10 +1,12 @@
 ﻿using Core.Entities;
+using Core.Shared.DataTransferObjects;
+using Core.Shared.RequestFeatures;
 
 namespace Core.Interfaces
 {
     public interface IProductService
     {
-        Task<IEnumerable<Product>> GetAllProductsAsync(bool trackChanges);
-        Task<Product> GetProductAsync(int id, bool trackChanges);
+        Task<IEnumerable<ProductDto>> GetAllProductsAsync(bool trackChanges, CatalogParameters parameters);
+        Task<ProductDto> GetProductAsync(Guid id, bool trackChanges);
     }
 }

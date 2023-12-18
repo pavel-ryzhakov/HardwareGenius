@@ -1,10 +1,11 @@
 ﻿using Core.Entities;
+using Core.Shared.RequestFeatures;
 
 namespace Core.Interfaces.Repository
-{ 
+{
     public interface IProductRepository
-    { 
-        Task<IEnumerable<Product>> GetAllProductsAsync(bool trackChanges);
-        Task<Product> GetProductAsync(int productCardId, bool trackChanges);
+    {
+        Task<IEnumerable<Product>> GetAllProductsAsync(bool trackChanges, CatalogParameters parameters);
+        Task<Product> GetProductAsync(Guid Id, bool trackChanges);
     }
 }

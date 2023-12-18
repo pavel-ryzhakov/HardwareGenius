@@ -15,6 +15,7 @@ namespace Web
             builder.Services.ConfigureCors();
             builder.Services.ConfigureIISIntegration();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddAutoMapper(typeof(Program));
 
             var app = builder.Build();
 
