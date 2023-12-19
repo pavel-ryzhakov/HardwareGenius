@@ -10,6 +10,7 @@ namespace Web
         public MappingProfile()
         {
             CreateMap<Product, ProductDto>();
+
         }
     }
 }

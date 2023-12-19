@@ -17,7 +17,9 @@ namespace Core.Services
         {
             _repository = repository;
             _mapper = mapper;
+            
         }
+
 
         public async Task<IEnumerable<ProductDto>> GetAllProductsAsync(bool trackChanges, CatalogParameters parameters)
         {

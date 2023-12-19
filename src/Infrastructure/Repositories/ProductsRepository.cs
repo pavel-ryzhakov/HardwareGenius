@@ -1,6 +1,8 @@
 ﻿using Core.Entities;
 using Core.Interfaces.Repository;
+using Core.Shared.DataTransferObjects;
 using Core.Shared.RequestFeatures;
+using Infrastructure.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories
@@ -13,8 +15,12 @@ namespace Infrastructure.Repositories
         {
             //await FindAll(trackChanges).OrderBy(c => c.Price).ToListAsync();
             var products = await FindAll(trackChanges)
+                .FilterCategory(parameters.CategoryId)
+                .FilterManufacture(parameters.ManufacturerId)
+                .FilterAttributes(parameters.AttributeValue)
                 .Skip((parameters.PageNumber - 1) * parameters.PageSize)
                 .Take(parameters.PageSize)
+                .Include(c=> c.AttributeValues)
                 .ToListAsync();
             return products;
         }

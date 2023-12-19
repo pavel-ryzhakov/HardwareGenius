@@ -12,6 +12,7 @@ namespace Core.Shared.RequestFeatures
         public int PageNumber { get; set; } = 1;
         private int _pageSize = 25;
         public string? Sort { get; set; }
+        
 
         public int PageSize
         {

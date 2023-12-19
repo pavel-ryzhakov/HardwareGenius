@@ -1,3 +1,4 @@
+
 using Web.Extensions;
 
 namespace Web
@@ -5,7 +6,7 @@ namespace Web
     public class Program
     {
         public static void Main(string[] args)
-        {
+        { 
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.ConfigureNpgsqlContext(builder.Configuration);
             builder.Services.ConfigureRepositoryManager();
