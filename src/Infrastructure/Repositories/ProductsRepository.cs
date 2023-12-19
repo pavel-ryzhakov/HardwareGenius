@@ -16,15 +16,14 @@ namespace Infrastructure.Repositories
             //await FindAll(trackChanges).OrderBy(c => c.Price).ToListAsync();
             var products = await FindAll(trackChanges)
                 .FilterCategory(parameters.CategoryId)
-                .FilterManufacture(parameters.ManufacturerId)
-                .FilterAttributes(parameters.AttributeValue)
+                .FilterManufacture(parameters.ManufacturerNamesList)
+                .FilterAttributes(parameters.AttributeValuesList)
                 .Skip((parameters.PageNumber - 1) * parameters.PageSize)
                 .Take(parameters.PageSize)
                 .Include(c=> c.AttributeValues)
                 .ToListAsync();
             return products;
         }
-
 
         public async Task<Product> GetProductAsync(Guid productId, bool trackChanges) =>
             await FindByCondition(c => c.Id.Equals(productId), trackChanges).SingleOrDefaultAsync();

@@ -18,7 +18,7 @@ namespace Core.Entities
         public Category Category { get; set; } = null!;
         [Column("manufacturer_id")]
         public int ManufacturerId { get; set; }
-        //public Manufacturer Manufacturer { get; set; } = null!;
+        public Manufacturer Manufacturer { get; set; } = null!;
         public ICollection<AttributeValue> AttributeValues { get; set; }
         [Column("accesed")]
         public bool Accesed { get; set; } = true;

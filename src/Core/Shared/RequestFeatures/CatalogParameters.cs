@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Core.Shared.RequestFeatures
+﻿namespace Core.Shared.RequestFeatures
 {
     public class CatalogParameters : RequestParameters
     {
@@ -15,8 +9,8 @@ namespace Core.Shared.RequestFeatures
         public uint MinPrice { get; set; }
         public uint MaxPrice { get; set; } = int.MaxValue;
         public int CategoryId { get; set; }
-        public List<int> ManufacturerId { get; set; } = null;
-        public string AttributeValue  { get; set; } = null;
+        public List<string>? ManufacturerNamesList { get; set; } 
+        public List<string>? AttributeValuesList  { get; set; } 
         public string? Model { get; set; }
         public string? SearchTerm { get; set; }
 
