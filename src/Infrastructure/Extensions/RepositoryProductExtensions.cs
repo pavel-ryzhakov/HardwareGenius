@@ -22,7 +22,23 @@ namespace Infrastructure.Extensions
                 return products;  
             }
         }
-        
+
+        public static IQueryable<string> ManufactureNames(this IQueryable<Product> products)
+        {
+            List<Manufacturer> manufacturers = new List<Manufacturer>();
+            var result = products
+                .Join(
+                    manufacturers,
+                    product => product.ManufacturerId,
+                    manufacturer => manufacturer.Id,
+                    (product, manufacturer) => new { product, manufacturer }
+                )
+                .Select(joinResult => joinResult.manufacturer.Name)
+                .ToList();
+
+            return (IQueryable<string>)result;
+        }
+
 
         public static IQueryable<Product> FilterAttributes(this IQueryable<Product> products, List<string> attributeValuesList)
         {
@@ -36,16 +52,18 @@ namespace Infrastructure.Extensions
             }
         }
 
+
+
         public static IQueryable<Product> FilterProduct(this IQueryable<Product> products, uint minPrice,
             uint maxPrice) =>
             products.Where(e => (e.Price >= minPrice && e.Price <= maxPrice));
 
-        public static IQueryable<Product> Search(this IQueryable<Product> graphicCards,
+        public static IQueryable<Product> Search(this IQueryable<Product> products,
             string searchTerm)
         {
-            if (string.IsNullOrWhiteSpace(searchTerm)) return graphicCards;
+            if (string.IsNullOrWhiteSpace(searchTerm)) return products;
             var lowerCaseTerm = searchTerm.Trim().ToLower();
-            return graphicCards.Where(e => e.Model.ToLower().Contains(lowerCaseTerm));
+            return products.Where(e => e.Model.ToLower().Contains(lowerCaseTerm));
         }
 
         public static IQueryable<Product> Sort(this IQueryable<Product> products, string orderByQueryString)

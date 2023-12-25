@@ -31,7 +31,7 @@ const PriceSlider = () => {
               title=""
               range={{
                 start: 6567,
-                end: 156582,
+                end: 20000,
               }}
               defaultValue={{
                 start: 0,

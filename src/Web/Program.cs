@@ -1,4 +1,3 @@
-
 using Web.Extensions;
 
 namespace Web

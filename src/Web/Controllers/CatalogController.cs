@@ -1,4 +1,6 @@
-﻿using Core.Interfaces;
+﻿using Core.Entities;
+using Core.Interfaces;
+using Core.Shared.DataTransferObjects;
 using Core.Shared.RequestFeatures;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -17,11 +19,15 @@ namespace Web.Controllers
         }
 
         [HttpGet]
+
+
+      
         public async Task<ActionResult> GetAllCpuAsync([FromQuery] CatalogParameters parameters)
         {
             try
             {
                 var productsResult = await _service.ProductService.GetAllProductsAsync(trackChanges: false, parameters);
+                
                 return Ok(productsResult);
             }
             catch
@@ -29,6 +35,8 @@ namespace Web.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
+
+        
 
         [HttpGet("{id:Guid}")]
         public async Task<IActionResult> GetProduct(Guid Id)

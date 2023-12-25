@@ -5,7 +5,12 @@ const Search = () => {
     <div className="searchString">
       <p>Поиск по каталогу</p>
       <form>
-        <input type="text" id="search" name="searh" placeholder="Поиск..." />
+        <input
+          type="text"
+          id="search"
+          name="SearchTerm"
+          placeholder="Поиск..."
+        />
         <button type="submit"></button>
       </form>
     </div>

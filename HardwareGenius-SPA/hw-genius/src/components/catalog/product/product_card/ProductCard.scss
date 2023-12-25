@@ -1,0 +1,81 @@
+@import "/src/styles/fonts/fonts.scss";
+@import "/src/styles/colors.scss";
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-between;
+  height: 285px;
+  width: 190px;
+  margin-bottom: 45px;
+  border: 1px solid $non-focus;
+  border-radius: 0px;
+  padding: 12px;
+  padding-left: 16px;
+
+  img {
+    height: 100px;
+    width: 100px;
+    border-radius: 7px;
+  }
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 7px;
+    font-family: "Futura PT Book";
+    color: $product-font;
+
+    .name-container {
+      display: flex;
+      flex-direction: column;
+      font-style: Light;
+      font-size: 15px;
+      .model {
+        font-size: 12px;
+        font-style: italic;
+        color: $regular-font;
+        height: 80px;
+      }
+    }
+  }
+  .cart-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .price-container {
+      font-family: "Futura PT";
+      font-size: 15px;
+      color: $product-font;
+    }
+    .like-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        margin-right: 5px;
+        width: 15px;
+        height: 14px;
+        border-radius: 0px;
+      }
+      .add-cart {
+        font-size: 12px;
+        margin: 0 0 0 0;
+        border: 0px;
+        width: 60px;
+      }
+      .add-cart:hover {
+        border: 1px solid $interface-color;
+      }
+      .add-cart:active {
+        background-color: $interface-color;
+        color: black;
+      }
+    }
+  }
+}
