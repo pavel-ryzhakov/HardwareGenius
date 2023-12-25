@@ -20,3 +20,14 @@
   font-weight: 500;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Futura Light C";
+  src: url("FuturaLightC.eot");
+  src: local("Futura Light C"), local("FuturaLightC"),
+    url("FuturaLightC.eot?#iefix") format("embedded-opentype"),
+    url("FuturaLightC.woff") format("woff"),
+    url("FuturaLightC.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}

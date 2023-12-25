@@ -22,7 +22,7 @@ namespace Web.Controllers
 
 
       
-        public async Task<ActionResult> GetAllCpuAsync([FromQuery] CatalogParameters parameters)
+        public async Task<ActionResult> GetAllProductsAsync([FromQuery] CatalogParameters parameters)
         {
             try
             {

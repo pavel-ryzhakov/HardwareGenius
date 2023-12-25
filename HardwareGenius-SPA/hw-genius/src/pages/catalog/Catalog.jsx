@@ -2,6 +2,8 @@ import "./Catalog.scss";
 import { useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import ProductCard from "../../components/catalog/product/product_card/ProductCard.jsx";
+import ManufacturerFilter from "./ManufacturerFilter.jsx";
+import Search from "../../components/catalog/Search";
 
 const Catalog = () => {
   const [products, setProducts] = useState([]);
@@ -37,17 +39,7 @@ const Catalog = () => {
     <div className="catalog">
       <div className="left-menu">
         <div class="search-panel">
-          <form>
-            <label for="SearchTerm">Поиск по каталогу</label>
-
-            <input
-              type="text"
-              id="SearchTerm"
-              name="SearchTerm"
-              placeholder="Поиск..."
-            />
-            <button type="submit">Поиск</button>
-          </form>
+          <Search />
         </div>
         <div className="price-panel">
           <form>
@@ -65,68 +57,10 @@ const Catalog = () => {
             <button class="button confirm">Применить</button>
           </div>
         </div>
-        <div className="dropdown-menu">
-          <nav>
-            <label for="touch">
-              <span>Производитель</span>
-            </label>
-            <input type="checkbox" id="touch" />
 
-            <ul class="slide">
-              <li>
-                <div className="li-el">
-                  <label for="happy">Asus</label>
-                  <input
-                    type="checkbox"
-                    class="custom-checkbox"
-                    id="happy"
-                    name="happy"
-                    value="yes"
-                  />
-                </div>
-              </li>
-              <li>
-                <div className="li-el">
-                  <label for="happy">Acer</label>
-                  <input
-                    type="checkbox"
-                    class="custom-checkbox"
-                    id="happy"
-                    name="happy"
-                    value="yes"
-                  />
-                </div>
-              </li>
-              <li>
-                <div className="li-el">
-                  <label for="happy">Palit</label>
-                  <input
-                    type="checkbox"
-                    class="custom-checkbox"
-                    id="happy"
-                    name="happy"
-                    value="yes"
-                  />
-                </div>
-              </li>
-              <li>
-                <div className="li-el">
-                  <label for="happy">MSI</label>
-                  <input
-                    type="checkbox"
-                    class="custom-checkbox"
-                    id="happy"
-                    name="happy"
-                    value="yes"
-                  />
-                </div>
-              </li>
-            </ul>
-          </nav>
+        <div className="manufacturer-filter">
+          <ManufacturerFilter products={products} />
         </div>
-        <div></div>
-
-        <p>Армения</p>
       </div>
       <div className="central-container">
         <div class="top-panel">

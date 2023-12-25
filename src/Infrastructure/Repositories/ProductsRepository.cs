@@ -24,6 +24,7 @@ namespace Infrastructure.Repositories
                 .Skip((parameters.PageNumber - 1) * parameters.PageSize)
                 .Take(parameters.PageSize)
                 .Include(c=> c.AttributeValues)
+                .Include(p => p.Manufacturer)
                 .ToListAsync();
             
 
